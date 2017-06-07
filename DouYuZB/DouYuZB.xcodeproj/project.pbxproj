@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		35AC13361EE78ECA0068E72D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC13351EE78ECA0068E72D /* AppDelegate.swift */; };
-		35AC13381EE78ECA0068E72D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC13371EE78ECA0068E72D /* ViewController.swift */; };
 		35AC133B1EE78ECA0068E72D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AC13391EE78ECA0068E72D /* Main.storyboard */; };
 		35AC133D1EE78ECA0068E72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AC133C1EE78ECA0068E72D /* Assets.xcassets */; };
 		35AC13401EE78ECA0068E72D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AC133E1EE78ECA0068E72D /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		35AC13321EE78ECA0068E72D /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AC13351EE78ECA0068E72D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		35AC13371EE78ECA0068E72D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		35AC133A1EE78ECA0068E72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35AC133C1EE78ECA0068E72D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35AC133F1EE78ECA0068E72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				35AC13351EE78ECA0068E72D /* AppDelegate.swift */,
-				35AC13371EE78ECA0068E72D /* ViewController.swift */,
+				35AC13631EE7A0CF0068E72D /* Classes */,
 				35AC13391EE78ECA0068E72D /* Main.storyboard */,
 				35AC133C1EE78ECA0068E72D /* Assets.xcassets */,
 				35AC133E1EE78ECA0068E72D /* LaunchScreen.storyboard */,
@@ -123,6 +121,61 @@
 				35AC13571EE78ECA0068E72D /* Info.plist */,
 			);
 			path = DouYuZBUITests;
+			sourceTree = "<group>";
+		};
+		35AC13631EE7A0CF0068E72D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35AC13671EE7A0CF0068E72D /* Main */,
+				35AC13651EE7A0CF0068E72D /* Home */,
+				35AC13661EE7A0CF0068E72D /* Live */,
+				35AC13681EE7A0CF0068E72D /* Profile */,
+				35AC13641EE7A0CF0068E72D /* Follow */,
+				35AC13691EE7A0CF0068E72D /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		35AC13641EE7A0CF0068E72D /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		35AC13651EE7A0CF0068E72D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		35AC13661EE7A0CF0068E72D /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		35AC13671EE7A0CF0068E72D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		35AC13681EE7A0CF0068E72D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		35AC13691EE7A0CF0068E72D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35AC13381EE78ECA0068E72D /* ViewController.swift in Sources */,
 				35AC13361EE78ECA0068E72D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +569,7 @@
 				35AC135C1EE78ECA0068E72D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35AC135D1EE78ECA0068E72D /* Build configuration list for PBXNativeTarget "DouYuZBTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +578,7 @@
 				35AC135F1EE78ECA0068E72D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35AC13601EE78ECA0068E72D /* Build configuration list for PBXNativeTarget "DouYuZBUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +587,7 @@
 				35AC13621EE78ECA0068E72D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
