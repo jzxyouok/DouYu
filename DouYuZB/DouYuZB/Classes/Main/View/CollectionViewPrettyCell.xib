@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewPrettyCell" customModule="DouYuZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="189"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="189"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHG-uU-Gfx">
+                        <rect key="frame" x="0.0" y="165" width="46" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="ClU-si-fFD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="上海市" image="ico_location">
+                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVO-WX-6wo">
+                        <rect key="frame" x="0.0" y="144" width="145" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="bUx-Dp-ggP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="JL6-Zc-bOt">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="139"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQm-3y-KPd">
+                        <rect key="frame" x="82" y="8" width="60" height="20"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="1WA-E1-s7o"/>
+                            <constraint firstAttribute="height" constant="20" id="be9-9c-g1k"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="666在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aHG-uU-Gfx" secondAttribute="bottom" constant="10" id="4oS-rX-KQY"/>
+                <constraint firstItem="mVO-WX-6wo" firstAttribute="top" secondItem="JL6-Zc-bOt" secondAttribute="bottom" constant="5" id="5fC-pM-eJ5"/>
+                <constraint firstAttribute="trailing" secondItem="JL6-Zc-bOt" secondAttribute="trailing" id="9Uk-kZ-cAU"/>
+                <constraint firstAttribute="trailing" secondItem="mVO-WX-6wo" secondAttribute="trailing" constant="5" id="9gf-DR-RP3"/>
+                <constraint firstItem="MQm-3y-KPd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="D6k-j7-0gl"/>
+                <constraint firstItem="aHG-uU-Gfx" firstAttribute="top" secondItem="mVO-WX-6wo" secondAttribute="bottom" constant="5" id="Fqr-Hz-43J"/>
+                <constraint firstAttribute="trailing" secondItem="MQm-3y-KPd" secondAttribute="trailing" constant="8" id="I4D-VQ-Hu9"/>
+                <constraint firstItem="mVO-WX-6wo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OBf-wE-owT"/>
+                <constraint firstItem="JL6-Zc-bOt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RCO-61-Vrv"/>
+                <constraint firstItem="aHG-uU-Gfx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VU4-i4-diA"/>
+                <constraint firstItem="JL6-Zc-bOt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gdI-aK-QTX"/>
+            </constraints>
+            <size key="customSize" width="150" height="189"/>
+            <connections>
+                <outlet property="cityBtn" destination="aHG-uU-Gfx" id="Tsy-f5-gUV"/>
+                <outlet property="iconImageView" destination="JL6-Zc-bOt" id="74u-E9-SXC"/>
+                <outlet property="nickNameLabel" destination="mVO-WX-6wo" id="gBJ-WR-v0q"/>
+                <outlet property="onlineBtn" destination="MQm-3y-KPd" id="9Z5-2M-K4p"/>
+            </connections>
+            <point key="canvasLocation" x="-76" y="-72.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ico_location" width="12" height="12"/>
+        <image name="live_cell_default_phone" width="103" height="103"/>
+    </resources>
+</document>
