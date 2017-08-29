@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="DouYuZB" customModuleProvider="target">
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="DouYuZB" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -19,16 +19,16 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRE-Mh-C03">
-                        <rect key="frame" x="24.5" y="65.5" width="31" height="14.5"/>
+                        <rect key="frame" x="24.5" y="64.5" width="31" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IO7-5a-ctN">
-                        <rect key="frame" x="17.5" y="10" width="45" height="45"/>
+                        <rect key="frame" x="17.5" y="14.5" width="45" height="45"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="45" id="n55-r3-HVm"/>
-                            <constraint firstAttribute="width" constant="45" id="uAq-WN-4xv"/>
+                            <constraint firstAttribute="width" constant="45" id="pRc-OF-fIA"/>
+                            <constraint firstAttribute="height" constant="45" id="w1A-yR-Ctc"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -37,16 +37,27 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqH-M3-5fU">
+                        <rect key="frame" x="0.0" y="90" width="80" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="yxV-2r-3ZP"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="IO7-5a-ctN" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="89Y-QT-NQe"/>
-                <constraint firstItem="IO7-5a-ctN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="VsH-bd-kgM"/>
-                <constraint firstItem="xRE-Mh-C03" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ZJ6-JR-swZ"/>
-                <constraint firstAttribute="bottom" secondItem="xRE-Mh-C03" secondAttribute="bottom" constant="10" id="ftz-FG-AKU"/>
+                <constraint firstItem="xRE-Mh-C03" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="4qJ-Xh-mOW"/>
+                <constraint firstItem="xRE-Mh-C03" firstAttribute="top" secondItem="IO7-5a-ctN" secondAttribute="bottom" constant="5" id="8LT-sF-Ab6"/>
+                <constraint firstItem="hqH-M3-5fU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CSH-yz-mH3"/>
+                <constraint firstItem="IO7-5a-ctN" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="RJh-Xl-oYN"/>
+                <constraint firstItem="IO7-5a-ctN" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-8" id="Xug-hy-ejg"/>
+                <constraint firstAttribute="trailing" secondItem="hqH-M3-5fU" secondAttribute="trailing" id="kbL-L1-Aon"/>
+                <constraint firstAttribute="bottom" secondItem="hqH-M3-5fU" secondAttribute="bottom" constant="-1" id="rU1-Kr-Qps"/>
             </constraints>
             <connections>
                 <outlet property="iconImageView" destination="IO7-5a-ctN" id="y6i-jN-sFO"/>
+                <outlet property="lineView" destination="hqH-M3-5fU" id="aEn-2x-yU8"/>
                 <outlet property="titleLabel" destination="xRE-Mh-C03" id="sIB-rG-pgq"/>
             </connections>
             <point key="canvasLocation" x="4" y="-159"/>

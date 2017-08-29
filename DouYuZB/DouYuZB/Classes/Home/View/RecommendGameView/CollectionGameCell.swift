@@ -12,11 +12,12 @@ import Kingfisher
 class CollectionGameCell: UICollectionViewCell {
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-
-    var group: AnchorGroup? {
+    @IBOutlet weak var lineView: UIView!
+    
+    var baseGame: BaseGameModel? {
         didSet{
-            titleLabel.text = group?.tag_name
-            let iconURL = NSURL(string: (group?.icon_url)!)!
+            titleLabel.text = baseGame?.tag_name
+            let iconURL = NSURL(string: (baseGame?.icon_url)!)!
             let imageResource = ImageResource(downloadURL: iconURL as URL)
             iconImageView.kf.setImage(with: imageResource, placeholder: Image(named: "home_more_btn"), options: nil, progressBlock: nil, completionHandler: nil)
         }
